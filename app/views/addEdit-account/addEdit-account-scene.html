@@ -1,0 +1,205 @@
+<div id="addEditAccountScene" class="palm-list">
+	<div class='palm-row first'>
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title">
+				<div x-mojo-element="TextField" id="accountName" align="left"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="categoryRow" class="palm-row">
+		<div id="categoryRowWrapper" class="palm-row-wrapper" x-mojo-tap-highlight="momentary">
+			<div align="left" class="palm-list-selector">
+				<div class="title">
+					<div class="list-selector-triangle"></div>
+					<div class="label" id="categoryRowLabel">Category</div>
+					<div id="accountCategory" class="list-selector-value truncating-text">
+						<!-- placeholder text -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<table class="palm-divider collapsible">
+		<tr>
+			<td class="left"></td>
+			<td class="label" id="security-options-label">Security Options</td>
+			<td class="line"></td>
+			<td><div id="acctOptionsToggle" class="palm-arrow-closed arrow_button"></div></td>
+			<td class="right"></td>
+		</td>
+	</table>
+
+	<div x-mojo-element="Drawer" id="acctOptionsDrawer">
+		<div class='palm-row'>
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="frozen" class="left"></div>
+				<div class="title smallBottom" id="freeze-internal-label">Freeze Internal Transactions</div>
+				<div class="preview" id="freeze-internal-preview">Prevent any changes from being made only in this account.</div>
+			</div>
+		</div>
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="CheckBox" id="locked" class="left"></div>
+				<div class="title smallBottom" id="add-security-label">PIN Lock</div>
+			</div>
+		</div>
+		<div x-mojo-element="Drawer" id="lockedCodeDrawer">
+			<div class='palm-row'>
+				<div class="palm-row-wrapper textfield-group">
+					<div class="title smallBottom">
+						<div class="label" id="security-code-label">Code</div>
+						<div x-mojo-element="PasswordField" id="lockedCode" align="left"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<table class="palm-divider collapsible">
+		<tr>
+			<td class="left"></td>
+			<td class="label" id="display-options-label">Display Options</td>
+			<td class="line"></td>
+			<td><div id="displayOptionsToggle" class="palm-arrow-closed arrow_button"></div></td>
+			<td class="right"></td>
+		</td>
+	</table>
+
+	<div x-mojo-element="Drawer" id="displayOptionsDrawer">
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="ListSelector" id="sorting" align="left"></div>
+				<div class="preview" id="sortingPreview"></div>
+			</div>
+		</div>
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="ListSelector" id="hidden" align="left"></div>
+				<div class="preview" id="hiddenPreview"></div>
+			</div>
+		</div>
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="ListSelector" id="bal_view" align="left"></div>
+				<div class="preview" id="bal_viewPreview"></div>
+			</div>
+		</div>
+		<div class='palm-row'>
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="defaultAccount"></div>
+				<div class="title smallBottom" id="default-account-label">Default Account</div>
+				<div class="preview" id="default-account-preview">This account is launched automatically on start.</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="showTransTime"></div>
+				<div class="title smallBottom" id="show-transaction-time-label">Show Transaction Time</div>
+				<div class="preview" id="show-transaction-time-preview">Displays the transaction time.</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="runningBalance"></div>
+				<div class="title smallBottom" id="running-balance-label">Show Running Balance</div>
+				<div class="preview" id="running-balance-preview">Running balance will be shown beneath transaction amount. The transaction amount will be black and the balance will be colored.</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="hideNotes"></div>
+				<div class="title smallBottom" id="hide-trsn-notes-label">Hide Transaction Notes</div>
+				<div class="preview" id="hide-trsn-notes-preview">Transaction notes will be hidden.</div>
+			</div>
+		</div>
+		<div class="palm-row" style="display:none;">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="hide_cleared"></div>
+				<div class="title smallBottom" id="hide-cleared-label">Hide Cleared Transactions</div>
+				<div class="preview" id="hide-cleared-preview">Cleared transactions will be hidden.</div>
+			</div>
+		</div>
+	</div>
+
+	<table class="palm-divider collapsible">
+		<tr>
+			<td class="left"></td>
+			<td class="label" id="transaction-options-label">Transaction Options</td>
+			<td class="line"></td>
+			<td><div id="transacitonOptionsToggle" class="palm-arrow-closed arrow_button"></div></td>
+			<td class="right"></td>
+		</td>
+	</table>
+
+	<div x-mojo-element="Drawer" id="transacitonOptionsDrawer">
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="transDescMultiLine"></div>
+				<div class="title smallBottom" id="trsn-desc-label">Description Multiline Mode</div>
+				<div class="preview" id="trsn-desc-preview">Allows the transaction description to take up multiple lines in the add/edit transaction screen.</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="useAutoComplete"></div>
+				<div class="title smallBottom" id="auto-complete-label">Use Auto-Complete</div>
+				<div class="preview" id="auto-complete-preview">Displays suggestions for transaction descriptions based on your history.</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="atmEntry"></div>
+				<div class="title smallBottom" id="atm-mode-label">Use ATM Mode</div>
+				<div class="preview" id="atm-mode-preview">Amount field will be automatically formatted as you type.</div>
+			</div>
+		</div>
+
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="ListSelector" id="autoSavings" align="left"></div>
+				<div class="preview" id="autoSavings-preview"></div>
+			</div>
+		</div>
+		<div x-mojo-element="Drawer" id="autoSavingsLinkDrawer">
+			<div id="autoSavingsLink-row" class="palm-row">
+				<div class="palm-row-wrapper" x-mojo-tap-highlight="momentary">
+					<div align="left" class="palm-list-selector">
+						<div class="title">
+							<div class="list-selector-triangle"></div>
+							<div class="label" id="autoSavingsLink-label">Linked account...</div>
+							<div id="autoSavingsLink" class="list-selector-value truncating-text">
+								<!-- placeholder text -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="CheckBox" id="checkField" class="left"></div>
+				<div class="title smallBottom" id="check-num-field-label">Add Check Number Field</div>
+				<div class="preview" id="check-num-field-preview">Add a field to record the check number in the add/edit transaction screen.</div>
+			</div>
+		</div>
+		<div class='palm-row'>
+			<div class="palm-row-wrapper" x-mojo-focus-highlight="true">
+				<div x-mojo-element="CheckBox" id="enableCategories" class="left"></div>
+				<div class="title smallBottom" id="expense-category-label">Add Expense Categories</div>
+				<div class="preview" id="expense-category-preview">Add a field to record the expense category in the add/edit transaction screen.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='palm-row'>
+		<div class="palm-row-wrapper textfield-group focused">
+			<div class="checkbook-note">
+				<div id="accountDescription" x-mojo-element="TextField"></div>
+			</div>
+		</div>
+	</div>
+</div>

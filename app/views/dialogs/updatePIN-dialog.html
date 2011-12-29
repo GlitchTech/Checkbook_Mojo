@@ -1,0 +1,39 @@
+<div class="palm-dialog-content" style="padding:0px;margin:0px;">
+	<div class="palm-dialog-title" id="pin-title">Change PIN Code</div>
+	<div class="palm-dialog-separator"></div>
+
+	<div id="pin-note" style="color:#333333;font-size:75%;">You pin may only contain numeric [0-9] charactes.</div>
+
+	<div class="palm-group unlabeled">
+		<div class="palm-list">
+			<div class="palm-row first">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div class="label" id="pin-code-label-1">PIN Code</div>
+						<div x-mojo-element="PasswordField" id="pinCode1" align="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div class="label" id="pin-code-label-2">Confirm</div>
+						<div x-mojo-element="PasswordField" id="pinCode2" align="left"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-inline-error" id="errorMessageContainer" style="display:none;">
+	<div class="error-message" id="errorMessage">Sample Error</div>
+</div>
+
+<div class="palm-dialog-buttons">
+	<div>
+		<div x-mojo-element="Button" id="okButton" style="width:48%; float:left;"></div>
+
+		<div x-mojo-element="Button" id="cancelButton" style="width:48%; float:right;"></div>
+	</div>
+</div>

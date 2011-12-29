@@ -1,0 +1,115 @@
+<div id="newTransactionScene" class="palm-list">
+
+	<div id="descriptionRow" class="palm-row">
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title">
+				<div id="primaryAccountParent" class="account-selector custom-button right" x-mojo-tap-highlight="momentary">
+					<div class="down-arrow"></div>
+					<div id="primaryAccount" class="account-name truncating-text"></div>
+				</div>
+
+				<div id="description" x-mojo-element="TextField"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="linkedAccountRow" class="palm-row">
+		<div class="palm-row-wrapper" x-mojo-tap-highlight="momentary">
+			<div align="left" class="palm-list-selector">
+				<div class="title">
+					<div class="list-selector-triangle"></div>
+					<div class="label" id="linkedAccountLabel">Transfer To...</div>
+					<!-- Needs to change depending on values -->
+
+					<div id="linkedAccount" class="list-selector-value truncating-text">
+						<!-- placeholder text -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-row">
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title" style="padding-left:0px;">
+				<div class="label" id="amount-label">Amount</div>
+				<div id="amountWrapper" class="amount-selector left"></div>
+				<div id="amount" x-mojo-element="TextField" align="left"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dateTimeRow" class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="icon left timedate"></div>
+			<div class="title truncating-text">
+				<div class="list-selector-triangle"></div>
+				<span id="dateTime_info">
+					<!-- placeholder text -->
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="repeatRow" class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="icon left repeat"></div>
+			<div class="title truncating-text">
+				<div class="list-selector-triangle"></div>
+				<span id="repeat_info">
+					<!-- placeholder text -->
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="categoryRow" class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div align="left" class="palm-list-selector">
+				<div class="title">
+					<div class="list-selector-triangle"></div>
+					<div class="label" id="categoryRowLabel">Category</div>
+					<div id="expenseCategory" class="list-selector-value truncating-text">
+						<!-- placeholder text -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="checkNumRow" class="palm-row">
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title">
+				<div class="label" id="check-number-label">Check Number</div>
+				<div id="checkNum" x-mojo-element="TextField"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-row">
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title">
+				<div class="label right" id="cleared-status-label">Cleared</div>
+				<div x-mojo-element="ToggleButton" id="cleared" class="left"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="autoTrsnRow" class="palm-row">
+		<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+			<div class="title">
+				<div class="label right" id="autoTrsn-label">Auto Transfer</div>
+				<div x-mojo-element="ToggleButton" id="autoTrsn" class="left"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-row">
+  		<div class="palm-row-wrapper textfield-group focused">
+			<div class="checkbook-note">
+			  	<div id="note" name="note" x-mojo-element="TextField" ></div>
+			</div>
+		</div>
+	</div>
+</div>

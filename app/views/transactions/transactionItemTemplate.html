@@ -1,0 +1,18 @@
+<div class="palm-row transactionData" id="#{id}_transaction" x-Mojo-tap-highlight="momentary">
+	<div id="#{rowCount}_transactionWrapper" class="palm-row-wrapper #{altRow}">
+		<div class="topPart">
+			<div class="descDateIconBox #{futureTransaction} #{transactionIcon}">
+				<div class="description truncating-text">#{desc}</div>
+				<div class="date">#{date}</div>
+			</div>
+			<div class="expense">
+				<span class="#{amountColor}">#{amount}</span><br /><span class="#{balanceColor}">#{runningBalance}</span>
+			</div>
+
+			<div class="cleared">
+				<div id="#{rowCount}_transactionCleared" class="checkbox #{clearedTransaction}"></div>
+			</div>
+		</div>
+		<div class="preview">#{catDisplay}#{checkNumDisplay}#{noteDisplay}</div>
+	</div>
+</div>

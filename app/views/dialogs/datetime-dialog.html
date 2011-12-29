@@ -1,0 +1,28 @@
+<div class="palm-dialog-content" style="padding:0px;margin:0px;">
+	<div class="palm-dialog-title">
+		<img src="./images/calendar.png" style="float:left;height:32px;width:32;" />
+		<div style="padding-left:40px;" id="dt-dialog-title">
+			Select a Date and Time
+		</div>
+	</div>
+	<div class="palm-dialog-separator"></div>
+
+	<div class="centerForce center">
+		<div id="date" x-mojo-element="DatePicker"></div>
+		<div id="time" x-mojo-element="TimePicker"></div>
+	</div>
+</div>
+
+<div class="palm-dialog-buttons">
+	<div>
+		<div x-mojo-element="Button" id="yesterdayButton" style="width:25%; float:left;"></div>
+		<div x-mojo-element="Button" id="todayButton" style="width:50%; float:left;"></div>
+		<div x-mojo-element="Button" id="tomorrowButton" style="width:25%; float:left;"></div>
+	</div>
+
+	<div style="clear:both;">
+		<div x-mojo-element="Button" id="okButton" style="width:48%; float:left;"></div>
+
+		<div x-mojo-element="Button" id="cancelButton" style="width:48%; float:right;"></div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<div class='palm-row' x-Mojo-tap-highlight="momentary">
+	<div class='palm-row-wrapper'><!-- #{altRow}-->
+		<!--<div class='label'><span class="#{currentStatus}">#{current}</span> <em>of</em> #{limit}</div>-->
+		<div class='title truncating-text'>#{categoryDisp}</div>
+		<div class="preview">
+			<strong><span class="#{currentStatus}">#{current}</span> <em>of</em> #{limit}</strong>
+			<br />
+			<span class="#{currentStatus}" style="font-style:italic;">#{remaining}</span>
+			<br />
+			<div x-mojo-element="ProgressBar" name="budget-status-bar" class="plan-prog-bar #{status}"></div>
+		</div>
+	</div>
+</div>

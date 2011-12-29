@@ -1,0 +1,49 @@
+<div class="palm-group" class="middle">
+<div class="palm-group-title" id="description">Enter PIN Code</div>
+	<div class="palm-list">
+		<div class="palm-row single">
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="title">
+					<div class="label" id="pin-code-label">PIN Code</div>
+					<div id="pinCode" x-mojo-element="PasswordField"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-row single">
+			<div class="numpad centerForce">
+				<div class="numpad-row">
+					<button class="numpad-button" id="np1">1</button>
+					<button class="numpad-button" id="np2">2</button>
+					<button class="numpad-button" id="np3">3</button>
+				</div>
+				<div class="numpad-row">
+					<button class="numpad-button" id="np4">4</button>
+					<button class="numpad-button" id="np5">5</button>
+					<button class="numpad-button" id="np6">6</button>
+				</div>
+				<div class="numpad-row">
+					<button class="numpad-button" id="np7">7</button>
+					<button class="numpad-button" id="np8">8</button>
+					<button class="numpad-button" id="np9">9</button>
+				</div>
+				<div class="numpad-row">
+					<button class="numpad-button" id="npc" style="visibility:hidden;">X</button>
+					<button class="numpad-button" id="np0">0</button>
+					<button class="numpad-button" id="npb">CLR</button>
+				</div>
+			</div>
+			<div class="palm-inline-error" id="errorMessageContainer" style="display:none;">
+				<div class="error-message" id="errorMessage">Sample Error</div>
+			</div>
+		</div>
+
+		<div class="palm-row single">
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="title">
+					<div x-mojo-element="Button" id="okButton"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,68 @@
+<div id="main" class="palm-hasheader">
+	<div id="main-hdr" class="palm-header left">
+		<div class='header-title truncating-text' id="search-transaction-header">
+			Transaction Search
+		</div>
+	</div>
+</div>
+
+<div id="searchMenu" class="palm-group">
+	<div class="palm-group-title" id="search-menu-header">Search Options</div>
+	<div class="palm-list">
+		<div class="palm-row first"><!-- search string -->
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="label"></div>
+				<div class="title">
+					<div id="searchString" x-mojo-element="TextField" align="left"></div>
+				</div>
+			</div>
+		</div>
+		<div id="searchAccountRow" class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div align="left" class="palm-list-selector">
+					<div class="title">
+						<div class="list-selector-triangle"></div>
+						<div class="label" id="search-account-label">Account</div>
+						<div id="searchAccount" class="list-selector-value truncating-text">
+							<!-- account selector: multi select -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="searchCategoryRow" class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div align="left" class="palm-list-selector">
+					<div class="title">
+						<div class="list-selector-triangle"></div>
+						<div class="label" id="search-category-label">Category</div>
+						<div id="searchCategory" class="list-selector-value truncating-text">
+							<!-- category selector: multi select (general & specific) -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper"><!-- cleared status: All, Cleared, Uncleared -->
+				<div id="clearedStatus" x-mojo-element="ListSelector" align="left"></div>
+			</div>
+		</div>
+		<div class="palm-row"><!-- start date: default one month ago -->
+			<div class="palm-row-wrapper">
+				<div class="centerForce center noPaddintTop">
+					<div id="startDate" x-mojo-element="DatePicker"></div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row last"><!-- start date: default today -->
+			<div class="palm-row-wrapper">
+				<div class="centerForce center noPaddintTop">
+					<div id="endDate" x-mojo-element="DatePicker"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="searchList" x-mojo-element="List"></div>

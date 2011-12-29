@@ -1,0 +1,31 @@
+<div class="palm-page-header">
+	<div class="palm-page-header-wrapper" style="height:50px;background:url('./icon48x48.png') no-repeat 2px 2px;">
+		<div id="budgetTitle" class="title">Add/Edit Budget</div>
+	</div>
+</div>
+
+<div class="palm-group unlabeled">
+	<div class="palm-list">
+		<div id="categoryRow" class='palm-row first' x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div align="left" class="palm-list-selector">
+					<div class="title">
+						<div class="list-selector-triangle"></div>
+						<div class="label" id="categoryRowLabel">Category</div>
+						<div id="expenseCategory" class="list-selector-value truncating-text">
+							<!-- placeholder text -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='palm-row last'>
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="title">
+					<div class="label" id="budgetLimitRowLabel">Limit</div>
+					<div x-mojo-element="TextField" id="spending_limit" align="left"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

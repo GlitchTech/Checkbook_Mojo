@@ -1,0 +1,117 @@
+<div class="cb-repeat-scene">
+	<div class="palm-page-header">
+		<div class="palm-page-header-wrapper">
+			<div class="icon left repeat"></div>
+			<div id="transDesc" class="title truncating-text">
+				transDesc
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-group unlabeled">
+		<div class="palm-list">
+			<div class="palm-row first" id="repeatFreqRow" x-mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div id="repeatFreq" x-mojo-element="ListSelector" align="left"></div>
+				</div>
+			</div>
+
+			<div x-mojo-element="Drawer" id="repeatFreqDrawer">
+				<div class="palm-row">
+					<div class="palm-row-wrapper">
+
+						<!-- Need to render this section in the JavaScript to allow for different spellings of the days -->
+
+						<div class="title" style="text-align:center;padding-left:0px;padding-right:0px;">
+							<table cols="7" cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td>
+										<div class="daily-repeat-item">Su</div>
+										<div id="SU" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">Mo</div>
+										<div id="MO" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">Tu</div>
+										<div id="TU" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">We</div>
+										<div id="WE" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">Th</div>
+										<div id="TH" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">Fr</div>
+										<div id="FR" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+									<td>
+										<div class="daily-repeat-item">Sa</div>
+										<div id="SA" class="daily-repeat-checkbox" x-mojo-element="CheckBox"></div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div x-mojo-element="Drawer" id="spanPickerDrawer">
+				<div class="palm-row last">
+					<div class="palm-row-wrapper">
+						<div class="title cb-span-picker">
+							<div>Every</div>
+							<div class="int-picker-span">
+								<div id="spanPicker" x-mojo-element="IntegerPicker"></div>
+							</div>
+							<div id="spanInterval" class="span-interval"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div x-mojo-element="Drawer" id="repeatUntilGroup">
+		<div class="palm-group unlabeled">
+			<div class="palm-list">
+				<div id="foreverdiv" class="palm-row single">
+					<div class="palm-row-wrapper">
+						<div id="dtl_checkbox_div">
+							<div id="repeatUntil" x-mojo-element="ListSelector" align="left"></div>
+						</div>
+					</div>
+				</div>
+				<div x-mojo-element="Drawer" id="repeatUntilDateDrawer">
+					<div class="palm-row last">
+						<div class="palm-row-wrapper">
+							<div class="centerForce center">
+								<div id="repeatUntilDate" x-mojo-element="DatePicker"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div x-mojo-element="Drawer" id="repeatUntilCountDrawer">
+					<div class="palm-row last">
+						<div class="palm-row-wrapper">
+							<div class="title cb-span-picker">
+								<div>Repeat</div>
+								<div id="repeatUntilCount" x-mojo-element="IntegerPicker"></div>
+								<div class="span-interval">time(s)</div>
+							</div>
+							<div class="preview">
+								This is counted from the original event.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="info-text" id="edit_repeat_info"></div>
+</div>

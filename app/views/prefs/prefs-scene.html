@@ -1,0 +1,110 @@
+<div id="main" class="palm-hasheader small">
+	<div class="palm-header left" id="main-hdr">
+		Preferences
+	</div>
+</div>
+
+<div>
+	<div class="palm-group">
+		<div class="palm-group-title" id="program-security-header">Program Security</div>
+		<div class="palm-list">
+			<div id="pin-lock-row-item" class="palm-row first">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="pinLock"></div>
+					<div class="title" id="pin-lock-label">PIN Lock</div>
+				</div>
+			</div>
+			<div x-mojo-element="Drawer" id="pinCodeDrawer">
+				<div class="palm-row last">
+					<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+						<div class="title">
+							<div class="label" id="pin-code-label">PIN Code</div>
+							<div x-mojo-element="PasswordField" id="pinCode" align="left"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" id="general-options-header">General Options</div>
+
+		<!--<div class="palm-group-icon">SHRINK GROUP ICON</div>-->
+
+		<div class="palm-list">
+			<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="updateCheckNotification"></div>
+					<div class="title" id="update-notice-label">Update Notice</div>
+				</div>
+			</div>
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="dispColor"></div>
+					<div class="title" id="account-color-label">Use Account Colors</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="bsSave"></div>
+					<div class="title" id="backswipe-save-label">Enable Backswipe Save</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" id="account-section-header">Accounts</div>
+
+		<div class="palm-list">
+			<div id="prefAccountList" x-mojo-element="List"></div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" id="default-account-header">Default Account</div>
+
+		<div class="palm-list">
+			<div class="palm-row single" id="defaultAccount" x-Mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper" id="defaultAccountWrapper">
+					<!-- Placeholder Text -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="palm-info-text smallest" id="default-account-note">The default account will automatically open when the program is started.</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" id="addEditGroup">Add/Edit Categories</div>
+
+		<div class="palm-list">
+			<div class="palm-row first" x-Mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div class="title" id="acctCatButton">Edit Account Categories</div>
+				</div>
+			</div>
+			<div class="palm-row last" x-Mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div class="title" id="trsnCatButton">Edit Transaction Categories</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" id="errorReportingGroup">Error Reporting</div>
+		<div class="palm-list">
+			<div id="pin-lock-row-item" class="palm-row single">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="error-reporting"></div>
+					<div class="title" id="error-reporting-label">Report Bugs to GlitchTech</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div x-mojo-element="Button" id="emailButton" style="display:none;"></div>
+
+	<div x-mojo-element="Button" id="purgeAllButton"></div>
+</div>

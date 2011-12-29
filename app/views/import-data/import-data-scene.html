@@ -1,0 +1,67 @@
+<div class="palm-page-header">
+	<div class="palm-page-header-wrapper" style="height:50px;background:url('./icon48x48.png') no-repeat 2px 2px;">
+		<div class="title" id="import-system-header">Import Data</div>
+	</div>
+</div>
+
+<div id="instructionContainer" style="font-size:80%;padding:5px 5px 0px 5px;">
+	<div id="instruction-container-text">
+		To import your finances into this program you must have a Google Documents account. (<a href="http://docs.google.com/">Click here</a> to sign up.)<br />
+		<br />
+		Upload or create a spreadsheet with all the information to import. <span style="color:#ff0000;">The first row of the spreadsheet must have the following columns: account, accountCat, date, amount, description, cleared, note.</span> Once that is complete, tap &quot;Continue&quot;, select your spreadsheet, then the system will import your data.
+	</div>
+	<div x-mojo-element="Button" id="readInstructions"></div>
+</div>
+
+<div id="loginContainer">
+	<div class="palm-group">
+		<div class="palm-group-title" id="login-container-title">Google Account</div>
+		<div class="palm-list">
+			<div class="palm-row first">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div id="username" x-mojo-element="TextField"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="palm-row last">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div x-mojo-element="PasswordField" id="password"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="palm-inline-error" style="margin-top:5px;">
+		<div class="error-message" id="login-container-error" style="display:none;">
+		</div>
+	</div>
+
+	<div class="palm-info-text" style="padding:3px;margin:0px;" id="login-container-info-text">
+		Enter your Google Spreadsheets information to import your financial data from <a href='http://docs.google.com/'>Google Documents</a> to your device.
+	</div>
+
+	<div class="palm-list">
+		<div class="palm-row single">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" id="saveLoginData"></div>
+				<div class="title" id="save-login-data-label">Save Login Information</div>
+			</div>
+		</div>
+	</div>
+
+	<div x-mojo-element="Button" id="submitUserData"></div>
+</div>
+
+<div id="spreadSheetListContainer">
+	<div class="palm-group">
+		<div class="palm-group-title" id="spreadsheet-list-title">Discovered Spreadsheets</div>
+
+		<div class="palm-list">
+			<div x-mojo-element="List" id="spreadSheetList"></div>
+		</div>
+	</div>
+</div>
