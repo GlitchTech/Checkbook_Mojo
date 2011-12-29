@@ -1,0 +1,49 @@
+<div id="main" class="palm-hasheader small">
+	<div class="palm-header left" id="main-hdr">
+		<span id="feedback-title">Feedback</span>
+	</div>
+</div>
+
+<div>
+	<div class="palm-group">
+		<div class="palm-group-title" id="general-options-header">General Options</div>
+
+		<div class="palm-list">
+			<div class="palm-row first">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<!-- optional -->
+						<div class="label" id="name-label">your name</div>
+						<div id="name" x-mojo-element="TextField" align="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="palm-row">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<!-- optional -->
+						<div class="label" id="email-label">email address</div>
+						<div id="email" x-mojo-element="TextField" align="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="palm-row">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+						<div class="label right" id="response-label">Would you like a response?</div>
+						<div id="response" x-mojo-element="ToggleButton" class="left"></div>
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div id="type" x-mojo-element="ListSelector" align="left"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div id="feedback" name="feedback" x-mojo-element="TextField" ></div>
+	</div>
+</div>

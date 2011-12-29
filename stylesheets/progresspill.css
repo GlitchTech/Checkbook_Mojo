@@ -1,0 +1,12 @@
+/* Custom Progress Bar */
+.red .progress-pill-progress {
+	-webkit-border-image:url( "../images/progress-bar-progress-red.png" ) 0 6 0 6 repeat repeat;
+}
+
+.green .progress-pill-progress {
+	-webkit-border-image:url( "../images/progress-bar-progress-green.png" ) 0 6 0 6 repeat repeat;
+}
+
+.yellow .progress-pill-progress {
+	-webkit-border-image:url( "../images/progress-bar-progress-yellow.png" ) 0 6 0 6 repeat repeat;
+}

@@ -1,0 +1,149 @@
+[
+	{"source": "app/assistants/app-assistant.js"},
+	{"source": "app/assistants/stage-assistant.js"},
+
+	{"source": "libs/database.js"},
+
+	{"source": "scripts/util.js"},
+	{"source": "scripts/ajax.timeout.js"},
+	{"source": "scripts/XMLObjectifier.js"},
+
+	{"source": "app/models/database-model.js"},
+	{"source": "app/models/sql-model.js"},
+	{"source": "app/models/repeat-model.js"},
+	{"source": "app/models/common-model.js"},
+	{"source": "app/models/gdata-model.js"},
+	{"source": "app/models/search-model.js"},
+
+	{"source": "app/models/metrix.js"},
+	{"source": "app/models/asyncWrappers.js"},
+
+	{
+		"scenes": "splash",
+		"source": "app/assistants/splash-assistant.js"
+	},
+	{
+		"scenes": "login",
+		"source": "app/assistants/login-assistant.js"
+	},
+	{
+		"scenes": "prefs",
+		"source": "app/assistants/prefs-assistant.js"
+	},
+	{"source": "app/assistants/update-pin-assistant.js"},
+	{
+		"scenes": "import-data",
+		"source": "app/assistants/import-data-assistant.js"
+	},
+	{
+		"scenes": "export-data",
+		"source": "app/assistants/export-data-assistant.js"
+	},
+	{
+		"scenes": "account-categories",
+		"source": "app/assistants/account-categories-assistant.js"
+	},
+	{"source": "app/assistants/addEdit-account-category-assistant.js"},
+	{
+		"scenes": "support",
+		"source": "app/assistants/support-assistant.js"
+	},
+	{
+		"scenes": "accounts",
+		"source": "app/assistants/accounts-assistant.js"
+	},
+	{
+		"scenes": "addEdit-account",
+		"source": "app/assistants/addEdit-account-assistant.js"
+	},
+	{
+		"scenes": "transactions",
+		"source": "app/assistants/transactions-assistant.js"
+	},
+	{
+		"scenes": "transactionUtil",
+		"source": "app/assistants/transactionUtil-assistant.js"
+	},
+	{
+		"scenes": "addEdit-transaction",
+		"source": "app/assistants/addEdit-transaction-assistant.js"
+	},
+	{"source": "app/assistants/transaction-datetime-assistant.js"},
+	{
+		"scenes": "repeat",
+		"source": "app/assistants/repeat-assistant.js"
+	},
+	{
+		"scenes": "transaction-categories",
+		"source": "app/assistants/transaction-categories-assistant.js"
+	},
+	{"source": "app/assistants/addEdit-transaction-category-assistant.js"},
+	{"source": "app/assistants/update-message-assistant.js"},
+	{
+		"scenes": "changelog",
+		"source": "app/assistants/changelog-assistant.js"
+	},
+	{
+		"scenes": "guide",
+		"source": "app/assistants/guide-assistant.js"
+	},
+	{
+		"scenes": "gts-connect",
+		"source": "app/assistants/gts-connect-assistant.js"
+	},
+	{
+		"scenes": "transaction-plan",
+		"source": "app/assistants/transaction-plan-assistant.js"
+	},
+	{"source": "app/assistants/transaction-plan-span-assistant.js"},
+	{
+		"scenes": "search-transactions",
+		"source": "app/assistants/search-transactions-assistant.js"
+	},
+	{"source": "app/assistants/multiselect-assistant.js"},
+	{
+		"scenes": "addEdit-budget",
+		"source": "app/assistants/addEdit-budget-assistant.js"
+	},
+	{
+		"scenes": "feedback",
+		"source": "app/assistants/feedback-assistant.js"
+	},
+	{"source": "app/assistants/transaction-trend-span-assistant.js"},
+	{
+		"scenes": "report-system",
+		"source": "app/assistants/report-system-assistant.js"
+	},
+	{
+		"scenes": "report-system-overall-line",
+		"source": "app/assistants/report-system-overall-line-assistant.js"
+	},
+	{
+		"scenes": "report-system-overall-bar",
+		"source": "app/assistants/report-system-overall-bar-assistant.js"
+	},
+	{
+		"scenes": "report-system-category-pie",
+		"source": "app/assistants/report-system-category-pie-assistant.js"
+	},
+	{
+		"scenes": "report-system-category-line",
+		"source": "app/assistants/report-system-category-line-assistant.js"
+	},
+	{
+		"scenes": "report-system-category-bar",
+		"source": "app/assistants/report-system-category-bar-assistant.js"
+	},
+	{
+		"scenes": "bills",
+		"source": "app/assistants/bills-assistant.js"
+	},
+	{
+		"scenes": "addedit-bill",
+		"source": "app/assistants/addedit-bill-assistant.js"
+	},
+	{
+		"scenes": "pay-bill",
+		"source": "app/assistants/pay-bill-assistant.js"
+	}
+]

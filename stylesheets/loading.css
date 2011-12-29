@@ -1,0 +1,63 @@
+/* Better Loading Message */
+.loading-activity {
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:50%;
+
+	border-width:12px 12px 12px 12px;
+
+	-webkit-box-sizing:border-box;
+	-webkit-border-image:url( "../images/border-waiting.png" ) 12 12 12 12 repeat repeat;
+}
+
+.loading-activity .palm-activity-indicator-small {
+	float:left;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.loading-activity .title {
+	float:left;
+
+	font-size:19px;
+
+	margin-left:10px;
+	padding-top:3px;
+
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.loading-activity .end-block {
+	clear:both;
+	height:0px;
+	margin:0px;
+	padding:0px;
+}
+
+.loading-activity .note {
+	font-size:14px;
+	padding:0px 5px;
+	color:#333333;
+
+	text-align:left;
+}
+
+.loading-activity .note {
+	font-size:14px;
+	padding:0px 5px;
+	color:#333333;
+
+	text-align:left;
+}
+
+#system-error-icon {
+	float: left;
+
+	margin: 7px 0px 0px 0px;
+
+	height: 32px;
+	width: 32px;
+
+	background:url( "../images/warning-icon.png" ) no-repeat;
+}

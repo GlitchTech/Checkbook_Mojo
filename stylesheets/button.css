@@ -1,0 +1,28 @@
+/* Button Colors */
+.palm-button.purple,
+#palm-dialog-box .palm-button.purple {
+	color:#ffffff;
+	-webkit-border-image:url( "../images/palm-button-purple.png" ) 0 17 104 17 repeat repeat;
+}
+.palm-button.purple.selected,
+#palm-dialog-box .palm-button.purple.selected {
+	-webkit-border-image:url( "../images/palm-button-purple.png" ) 52 17 52 17 repeat repeat;
+}
+.palm-button.purple.disabled,
+#palm-dialog-box .palm-button.purple.disabled {
+	-webkit-border-image:url( "../images/palm-button-purple.png" ) 104 17 0 17 repeat repeat;
+}
+
+.palm-button.blue,
+#palm-dialog-box .palm-button.blue {
+	color:#ffffff;
+	-webkit-border-image:url( "../images/palm-button-blue.png" ) 0 17 104 17 repeat repeat;
+}
+.palm-button.blue.selected,
+#palm-dialog-box .palm-button.blue.selected {
+	-webkit-border-image:url( "../images/palm-button-blue.png" ) 52 17 52 17 repeat repeat;
+}
+.palm-button.blue.disabled,
+#palm-dialog-box .palm-button.blue.disabled {
+	-webkit-border-image:url( "../images/palm-button-blue.png" ) 104 17 0 17 repeat repeat;
+}
