@@ -106,7 +106,7 @@ var SplashAssistant = Class.create( commonModel, {
 		var currVersion = results.rows.item(0)['dbVer'];
 
 		//DB Version
-		var versionCheck = 21;
+		var versionCheck = 22;
 
 		if( currVersion === versionCheck && this.launched === false ) {
 
@@ -385,7 +385,15 @@ var SplashAssistant = Class.create( commonModel, {
 
 							versionCheck = 21;
 						case 21:
-							//versionCheck = 22;
+							transaction.executeSql( "UPDATE acctTrsnSortOptn SET qry = ? WHERE sortId = ?;", [ "IFNULL( NULLIF( checkNum, '' ), ( SELECT IFNULL( MAX( checkNum ), 0 ) FROM transactions LIMIT 1 ) ) ASC, itemId ASC", 9 ], this._binds['successHandler'], this._binds['updateError'] );
+
+							versionCheck = 22;
+						case 22:
+							//GTS Sync System
+							//"DROP TABLE IF EXISTS syncQueue;"
+							//"CREATE TABLE syncQueue( syncId INTEGER PRIMARY KEY ASC, action TEXT, table TEXT, data TEXT, where TEXT, ts INTEGER );"
+
+							//this.versionCheck = 23;
 					}
 
 					if( do_final_stage === true ) {

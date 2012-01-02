@@ -103,12 +103,12 @@ var AddEditBudgetAssistant = Class.create( {
 
 	activate: function() {
 
-		if( this.budgetItem['category'].split( "|" )[1] === "%" ) {
+		if( this.budgetItem['category2'] === "%" ) {
 
-			this.controller.get( 'expenseCategory' ).update( this.budgetItem['category'].split( "|" )[0] );
+			this.controller.get( 'expenseCategory' ).update( this.budgetItem['category'] );
 		} else {
 
-			this.controller.get( 'expenseCategory' ).update( this.budgetItem['category'].split( "|" )[1] );
+			this.controller.get( 'expenseCategory' ).update( this.budgetItem['category2'] );
 		}
 
 		Mojo.Event.listen( this.controller.get( 'categoryRow' ), Mojo.Event.tap, this.selectCategoryHandler );
@@ -245,10 +245,9 @@ var AddEditBudgetAssistant = Class.create( {
 					onChoose: this.selectSubCategory.bind( this ),
 					placeNear: this.controller.get( 'categoryRowLabel' ),
 					items: this.categoryData['genCat'],
-					toggleCmd: this.budgetItem['category'].split( "|" )[0]
+					toggleCmd: this.budgetItem['category']
 				}
 			);
-		event.stop();
 	},
 
 	selectSubCategory: function( choice ) {
@@ -281,7 +280,7 @@ var AddEditBudgetAssistant = Class.create( {
 						}.bind( this ),
 						placeNear: this.controller.get( 'categoryRowLabel' ),
 						items: this.categoryData['specCat'][choice],
-						toggleCmd: ( ( this.budgetItem['category'].split( "|" )[0] === choice ) ? this.budgetItem['category'].split( "|" )[1] : "" )
+						toggleCmd: ( ( this.budgetItem['category'] === choice ) ? this.budgetItem['category2'] : "" )
 					}
 				);
 		}

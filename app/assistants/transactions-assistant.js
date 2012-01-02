@@ -814,6 +814,11 @@ var TransactionsAssistant = Class.create( searchModel, {
 			}
 		}
 
+		if( catDisplayItem == " &raquo; " ) {
+
+			catDisplayItem = "";
+		}
+
 		return( {
 				//Record items
 				rowCount: index,

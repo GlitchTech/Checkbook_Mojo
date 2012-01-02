@@ -174,12 +174,12 @@ var SearchTransactionsAssistant = Class.create( commonModel, {
 
 	ready: function() {
 
+		Mojo.Log.info( "ready" );
+
 		this.controller.get( 'search-transaction-header' ).update( $L( "Transaction Search" ) );
 		this.controller.get( 'search-menu-header' ).update( $L( "Search Options" ) );
 		this.controller.get( 'search-account-label' ).update( $L( "Accounts" ) );
 		this.controller.get( 'search-category-label' ).update( $L( "Category" ) );
-systemError( "ready" );
-		return;
 
 		if( this.autoSearch === false ) {
 
@@ -200,8 +200,8 @@ systemError( "ready" );
 
 	//500ms before activate
 	aboutToActivate: function() {
-systemError( "aboutToActivate" );
-		return;
+
+		Mojo.Log.info( "aboutToActivate" );
 
 		if( this.itemEdited === true ) {
 
@@ -221,9 +221,15 @@ systemError( "aboutToActivate" );
 
 	//Scene made visible
 	activate: function() {
+
+		Mojo.Log.info( "activate" );
 	},
 
 	fetchTrsnSortMethods: function() {
+
+		return;
+
+		Mojo.Log.info( "fetchTrsnSortMethods" );
 
 		accountsDB.transaction(
 			(
@@ -242,6 +248,8 @@ systemError( "aboutToActivate" );
 	},
 
 	fetchTrsnSortMethodsHandler: function( transaction, results ) {
+
+		Mojo.Log.info( "fetchTrsnSortMethodsHandler" );
 
 		this.sortOptionsModel['items'].length = 0;
 
@@ -273,6 +281,8 @@ systemError( "aboutToActivate" );
 
 	/** Handle Inputs **/
 	handleCommand: function( event ) {
+
+		Mojo.Log.info( "handleCommand" );
 
 		if( event.type === Mojo.Event.back ) {
 
@@ -334,6 +344,10 @@ systemError( "aboutToActivate" );
 
 	runSearch: function() {
 
+		Mojo.Log.info( "runSearch" );
+
+		return;
+
 		var lengthQry = "SELECT COUNT( DISTINCT itemId ) as listLength FROM transactions exp WHERE " +
 							( this.searchStringModel['value'] === "" ? "" : " ( desc LIKE '%" + this.searchStringModel['value'] + "%' OR note LIKE '%" + this.searchStringModel['value'] + "%' ) AND" ) +
 							( this.clearedStatusModel['value'] === 2 ? "" : " cleared = " + this.clearedStatusModel['value'] + " AND" ) +
@@ -357,6 +371,8 @@ systemError( "aboutToActivate" );
 
 	runSearchHandler: function( transaction, results ) {
 
+		Mojo.Log.info( "runSearchHandler" );
+
 		this.listLength = results.rows.item(0)['listLength'];
 
 		this.controller.get( 'searchList' ).mojo.setLengthAndInvalidate( this.listLength );
@@ -371,6 +387,8 @@ systemError( "aboutToActivate" );
 	},
 
 	runSearchCallback: function( listWidget, offset, count ) {
+
+		Mojo.Log.info( "runSearchCallback" );
 
 		var expenseSort = " date ASC";
 
@@ -441,6 +459,8 @@ systemError( "aboutToActivate" );
 	},
 
 	runSearchCallbackHandler: function( offset, count, transaction, results ) {
+
+		Mojo.Log.info( "runSearchCallbackHandler" );
 
 		var dateObj;
 

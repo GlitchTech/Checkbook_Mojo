@@ -501,7 +501,8 @@ var TransactionPlanAssistant = Class.create( commonModel, {
 					accounts: []
 				};
 
-			this.controller.stageController.pushScene( "search-transactions", searchArguments, true );
+			Mojo.Controller.getAppController().showBanner( $L( "System disabled, sorry." ), "", "cbNotice" );
+			//this.controller.stageController.pushScene( "search-transactions", searchArguments, true );
 		}
 
 		event.stop();

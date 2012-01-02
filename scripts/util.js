@@ -255,7 +255,7 @@ function daysInMonth( inMonth, inYear ) {
 /** Error Submission System **/
 function systemError( errorIn ) {
 
-	Mojo.Log.info( "systemError" );//"
+	Mojo.Log.info( "systemError" );
 
 	if( typeof( errorIn ) === "string" && errorIn.toLowerCase().match( "read only database" ) ) {
 
