@@ -495,39 +495,6 @@ var SplashAssistant = Class.create( commonModel, {
 
 		this.updateProgressBar( 1 );
 
-		/** BETA TRIAL CHECK **/
-		if( Mojo.Controller.appInfo.title.toLowerCase().indexOf( "beta" ) >= 0 ) {
-
-			var expiration = new Date( "December 31, 2012 23:59:59" ).getTime();
-			var today = new Date().getTime();
-			var daysLeft = Math.round( 10 * ( expiration - today ) / 86400000 ) / 10;
-
-			if( daysLeft < 60 ) {
-
-				Element.insert( document.body, new Element( 'div', { 'id': 'palm-disclaimer', 'class': 'fadedUltra' } ) );
-			} else if( daysLeft < 45 && daysLeft >= 30 ) {
-
-				Element.insert( document.body, new Element( 'div', { 'id': 'palm-disclaimer', 'class': 'fadedMega' } ) );
-			} else if( daysLeft < 30 && daysLeft >= 15 ) {
-
-				Element.insert( document.body, new Element( 'div', { 'id': 'palm-disclaimer', 'class': 'faded' } ) );
-			} else if( daysLeft < 15 ) {
-
-				Element.insert( document.body, new Element( 'div', { 'id': 'palm-disclaimer' } ) );
-			}
-
-			if( daysLeft < 30 && daysLeft >= 0 ) {
-
-				Mojo.Controller.getAppController().showBanner( "Beta expires in " + daysLeft + " days.", "", "cbBeta" );
-			} else if( daysLeft < 0 ) {
-
-				Mojo.Controller.getAppController().showBanner( "Checkbook Beta has expired.", "", "cbBeta" );
-				Mojo.Controller.getAppController().showBanner( "Please update to the paid version.", "", "cbBeta2" );
-				this.controller.stageController.swapScene( "export-data" );
-				return;
-			}
-		}
-
 		checkbookPrefs['Metrix'].postDeviceData();
 
 		if( checkbookPrefs['useCode'] === 1 ) {
