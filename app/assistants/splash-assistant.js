@@ -132,8 +132,6 @@ var SplashAssistant = Class.create( commonModel, {
 
 			checkbookPrefs['custom_sort'] = results.rows.item(0)['custom_sort'];
 
-			checkbookPrefs['Metrix'] = new Metrix();//Instantiate Metrix Library
-
 			this.nduidCheck();
 
 			if( this.firstRun === true ) {
@@ -494,8 +492,6 @@ var SplashAssistant = Class.create( commonModel, {
 	launchMain: function() {
 
 		this.updateProgressBar( 1 );
-
-		checkbookPrefs['Metrix'].postDeviceData();
 
 		if( checkbookPrefs['useCode'] === 1 ) {
 			//Program Locked

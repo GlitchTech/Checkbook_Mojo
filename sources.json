@@ -15,7 +15,6 @@
 	{"source": "app/models/gdata-model.js"},
 	{"source": "app/models/search-model.js"},
 
-	{"source": "app/models/metrix.js"},
 	{"source": "app/models/asyncWrappers.js"},
 
 	{

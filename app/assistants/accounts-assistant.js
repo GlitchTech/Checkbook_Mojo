@@ -343,8 +343,6 @@ var AccountsAssistant = Class.create( searchModel, {
 
 			headerBalanceElem.update( formatAmount( accounts_obj['totalBalance'][4] ) );
 			headerBalanceElem.addClassName( balanceColor );
-
-			checkbookPrefs['Metrix'].customCounts( 'Accounts-Assistant', 'AccountCount', accounts_obj['items'].length );
 		}
 
 		this.stopSpinner();

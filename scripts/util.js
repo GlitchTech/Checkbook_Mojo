@@ -333,11 +333,6 @@ function resetSecurityDelay() {
 /** Version Update **/
 function checkAppUpdate( stageController ) {
 
-	if( stageController ) {
-
-		//checkbookPrefs['Metrix'].checkBulletinBoard( stageController.activeScene(), 1001 );
-	}
-
 	if( stageController && checkbookPrefs['updateCheck'] === "FIRST_RUN" ) {
 
 		updateVersionData();
