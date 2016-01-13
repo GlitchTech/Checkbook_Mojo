@@ -24,3 +24,7 @@ This project is under version control using git.
 [https://bitbucket.org/GlitchTechScience/checkbook_mojo](https://bitbucket.org/GlitchTechScience/checkbook_mojo)
 
 `git clone git@bitbucket.org:GlitchTechScience/checkbook_mojo.git`
+
+License
+-------
+[Creative Commons - Attribution - Non-Commercial license](http://creativecommons.org/licenses/by-nc/3.0/)
