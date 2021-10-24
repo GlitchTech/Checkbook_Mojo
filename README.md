@@ -21,9 +21,7 @@ Version Control
 
 This project is under version control using git.
 
-[https://bitbucket.org/GlitchTechScience/checkbook_mojo](https://bitbucket.org/GlitchTechScience/checkbook_mojo)
-
-`git clone git@bitbucket.org:GlitchTechScience/checkbook_mojo.git`
+[https://github.com/GlitchTech/Checkbook_Mojo](https://github.com/GlitchTech/Checkbook_Mojo)
 
 License
 -------
